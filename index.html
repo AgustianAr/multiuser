@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Optional: This will hide any overflowing content */
+        }
+
+        .full-object {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <include src="index.php"></include>
+    <div class="container">
+        <object class="full-object" data="index.php" type="text/html"></object>
+    </div>
 </body>
 </html>
